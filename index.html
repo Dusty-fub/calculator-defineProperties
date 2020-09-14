@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      .Calculator {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .input-group input {
+        margin: 10px;
+        height: 50px;
+        font-size: 30px;
+        text-align: center;
+      }
+      .btn-group button.current {
+        background-color: orange;
+        color: fff;
+      }
+      .btn-group button {
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+      }
+      .result,
+      .equal {
+        height: 50px;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Calculator">
+      <div class="input-group">
+        <input type="text" value="0" class="f-input" />
+      </div>
+      <div class="btn-group">
+        <button data-field="plus" class="current">+</button>
+        <button data-field="minus">-</button>
+        <button data-field="mul">*</button>
+        <button data-field="div">/</button>
+      </div>
+      <div class="input-group">
+        <input type="text" value="0" class="s-input" />
+      </div>
+      <div class="equal">=</div>
+
+      <div class="result">0</div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
